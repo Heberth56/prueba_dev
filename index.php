@@ -1,9 +1,23 @@
+<?php 
+  $datos = include './data.php';  
+  $uri = $_SERVER['REQUEST_URI'];
+  $segments = explode('/', $uri);
+  $codigo = $segments[3] ?? null;
+  $prd = "";
+  $detalle = "";
+  $detalle = array_filter($datos, function($data) use ($codigo) {
+      return $data["code"] == $codigo;
+  });
+  $prd = reset($detalle);  
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="http://localhost/prueba_dev/index.css" />
     <link
       href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
       rel="stylesheet"
@@ -50,13 +64,16 @@
           VERIFICACIÓN DE LA CERTIFICACIÓN DEL CENSO 2024
         </h1>
       </div>
-      <div class="codigo">
-        Código: <span class="cdg">m1VrjNtfOh5XC4vj</span> <br />
-        Verifique que el Certificado tenga impresa la información mostrada en
-        este formulario
-      </div>
+      <?php if($prd):?>
+        <div class="codigo">
+          Código: <span class="cdg"><?php echo $prd['code']?></span> <br />
+          Verifique que el Certificado tenga impresa la información mostrada en
+          este formulario
+        </div>
+      <?php endif ?>
     </section>
-    <section>
+    <?php if($prd):?>
+      <section>
       <div class="formulario">
         <div class="fieldset">
           <div class="legend">
@@ -71,7 +88,7 @@
               <div class="form-input name">
                 <label for="#" class="lbl_no_icon">Cédula de Identidad:</label
                 ><br />
-                <div class="form-control">6760211</div>
+                <div class="form-control"><?php echo $prd['dni']?></div>
               </div>
             </div>
             <div class="form-group">
@@ -83,17 +100,17 @@
                 <div class="row">
                   <label for="#" class="lbl_no_icon">Primer Apellido:</label
                   ><br />
-                  <div class="form-control">6760211</div>
+                  <div class="form-control"><?php echo $prd['paterno']?></div>
                 </div>
                 <div class="row">
                   <label for="#" class="lbl_no_icon">Segundo Apellido:</label
                   ><br />
-                  <div class="form-control">6760211</div>
+                  <div class="form-control"><?php echo $prd['materno']?></div>
                 </div>
               </div>
               <div class="name">
                 <label for="#" class="lbl_no_icon">Nombres:</label><br />
-                <div class="form-control">6760211</div>
+                <div class="form-control"><?php echo $prd['nombre']?></div>
               </div>
             </div>
             <div class="form-group">
@@ -129,11 +146,12 @@
               ><i class="mdi mdi-information"></i> Es muy importante</span
             >
             que verifique que el certificado impreso corresponde a
-            <span class="text-success">
-              EULALIA CAROLINA CHIPANA HUARANCANI </span
-            >, con el C.I.: <span class="text-success">6760211</span>, y que
+            <span class="text-success">              
+              <?php echo $prd['nombre'].' '.$prd['paterno'].' '.$prd['materno']?>
+              </span
+            >, con el C.I.: <span class="text-success"><?php echo $prd['dni']?></span>, y que
             contenga el código
-            <span class="text-success">m1VrjNtfOh5XC4vj</span> en la URL de
+            <span class="text-success"><?php echo $prd['code']?></span> en la URL de
             verificación.
           </div>
           <div class="btn-group">
@@ -151,6 +169,29 @@
         </div>
       </div>
     </section>
+    <?php else:?>
+      <section class="not-found">
+        <div class="content-red">
+          VERIFICACIÓN INCORRECTA
+        </div>
+        <div class="container-red">
+          <span class="text-danger-not">!El código no corresponde a un Voluntario registrado.</span>
+          Puede verificar si se está enviando el código correcto, o consultar con la Oficina Departamental correspondiente.
+        </div>
+        <div class="context">
+            <a href="https://certcpv2024.ine.gob.bo/" class="btn-danger"
+              ><i class="mdi mdi-home icon"></i> Ir al Inicio de las
+              Certificaciones</a
+            >
+            <a
+              href="https://www.ine.gob.bo/index.php/oficinas-departamentales/"
+              class="btn-primary"
+              ><i class="mdi mdi-office-building icon"></i> Ver Oficinas
+              Departamentales</a
+            >
+          </div>
+      </section>
+    <?php endif;?>
     <section class="container-fluid content_footer">
       <i class="mdi mdi-card-account-phone"></i> Si presenta problemas o tiene
       dudas con la certificación, puede comunicarse con la
@@ -169,6 +210,6 @@
         ><i class="mdi mdi-email-check"></i> certificadoscpv@ine.gob.bo</a
       >
     </section>
-    <script src="index.js"></script>
+    <script src="http://localhost/prueba_dev/index.js"></script>
   </body>
 </html>
