@@ -1,6 +1,0 @@
-Options All -Indexes
-
-RewriteEngine On
-RewriteRule ^index$ index.php/verificar_certificado [L]
-RewriteRule ^verificar_certificado$ index.php/verificar_certificado [L]
-RewriteRule ^verificar_certificado/([a-zA-Z0-9]+)$ index.php/verificar_certificado/$1 [L]
