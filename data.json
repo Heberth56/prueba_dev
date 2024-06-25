@@ -1,6 +1,6 @@
 [
   {
-    "nombre": "JHON LUIS",
+    "nombre": "JOHN LUIS",
     "paterno": "ALMARAZ",
     "materno": "MENDOZA",
     "dni": "9148845",
@@ -9,15 +9,15 @@
   {
     "nombre": "JUAN FRANCISCO",
     "paterno": "CONDORI",
-    "materno": "PAYE",
+    "materno": "PAYI",
     "dni": "9078003",
     "code": "JdHFrnlg2KBhfgn"
   },
   {
-    "nombre": "ARLYMES NORIE",
+    "nombre": "ARLYMES NORÍE",
     "paterno": "PARI",
     "materno": "TICONA",
-    "dni": "10931315",
+    "dni": "10931415",
     "code": "RgVYwknm5KZgfhn"
   },
   {
@@ -31,41 +31,41 @@
     "nombre": "HENRRY BRAYAN",
     "paterno": "ONOFRE",
     "materno": "CHIPANA",
-    "dni": "100065576",
+    "dni": "10065576",
     "code": "QdzNzlnm3JXgkfn"
   },
   {
-    "nombre": "EULALIA CAROLINA CHIPANA HUARANCANI",
-    "paterno": "CHIPANA",
-    "materno": "HUARANCANI",
-    "dni": "6760211",
+    "nombre": "JHORDAN",
+    "paterno": "ZAMBRANA",
+    "materno": "MAMANI",
+    "dni": "9974697",
     "code": "YgdUzmnj7LXgfgm"
   },
   {
-    "nombre": "EULALIA CAROLINA CHIPANA HUARANCANI",
-    "paterno": "CHIPANA",
-    "materno": "HUARANCANI",
-    "dni": "6760211",
+    "nombre": "HÉCTOR GUALBERTO",
+    "paterno": "ACHU",
+    "materno": "CRUZ",
+    "dni": "6925013",
     "code": "BsfGzlnq9JPgkgn"
   },
   {
-    "nombre": "EULALIA CAROLINA CHIPANA HUARANCANI",
-    "paterno": "CHIPANA",
-    "materno": "HUARANCANI",
-    "dni": "6760211",
+    "nombre": "PAMELA",
+    "paterno": "MENDOZA",
+    "materno": "ZAMBRANA",
+    "dni": "10789443",
     "code": "KhtFzqnm8JNgfhn"
   },
   {
-    "nombre": "EULALIA CAROLINA CHIPANA HUARANCANI",
-    "paterno": "CHIPANA",
-    "materno": "HUARANCANI",
-    "dni": "6760211",
-    "code": "321654987"
+    "nombre": "JHONNY",
+    "paterno": "QUISPE",
+    "materno": "CONDORI",
+    "dni": "9911278",
+    "code": "ZhtQzq4m8JNgMhn"
   },
   {
-    "nombre": "EULALIA CAROLINA CHIPANA HUARANCANI",
-    "paterno": "CHIPANA",
-    "materno": "HUARANCANI",
+    "nombre": "-------",
+    "paterno": "C---",
+    "materno": "----",
     "dni": "6760211",
     "code": "321654987"
   }

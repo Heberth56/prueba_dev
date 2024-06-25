@@ -315,8 +315,12 @@ strong {
     }
 
     .text-cabecera {
-        font-size: 29px !important;
+        font-size: 27px !important;
+    }
 
+    .cabecera_legend {
+        padding-top: 5px;
+        font-size: 17px !important;
     }
 
     .cabecera_censo {
@@ -342,6 +346,28 @@ strong {
         width: 80% !important;
     }
 
+    .title {
+        font-size: 1em;
+    }
+
+    .img_logo {
+        width: 75px;
+        height: 40px;
+    }
+
+    .card-content {
+
+        font-size: 15px;
+    }
+
+    .card-content-footer {
+        font-size: 15px;
+    }
+
+}
+
+.title-card-content {
+    font-weight: 900 !important;
 }
 
 .menu-slide {
