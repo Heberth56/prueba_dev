@@ -63,10 +63,112 @@
     "code": "ZhtQzq4m8JNgMhn"
   },
   {
+    "nombre": "NUEVOS AGREGADOS"
+  },
+
+  {
+    "nombre": "BRANDON JOAQUIN",
+    "paterno": "PERALTA",
+    "materno": "QUIROGA",
+    "dni": "12635871",
+    "code": "AbCdEfGhIjKlMnOp"
+  },
+  {
+    "nombre": "OMAR",
+    "paterno": "PARI",
+    "materno": "QUISPE",
+    "dni": "12807777",
+    "code": "zYxWvUtSrQpOnMl"
+  },
+  {
+    "nombre": "MIGUEL ANGEL",
+    "paterno": "RAMOS",
+    "materno": "RAMOS",
+    "dni": "13629216",
+    "code": "HgFeDcBa98765432"
+  },
+  {
+    "nombre": "AMILCAR",
+    "paterno": "TINTAYA",
+    "materno": "YUJRA",
+    "dni": "9968487",
+    "code": "PqRsTuVwXyZ1qZPbo"
+  },
+  {
+    "nombre": "OSVALDO",
+    "paterno": "MANRIQUEZ",
+    "materno": "COLQUE",
+    "dni": "6999718",
+    "code": "MnOpQrStUvWxYzA"
+  },
+  {
+    "nombre": "EVER ROLANDO",
+    "paterno": "QUISPE",
+    "materno": "CUTIPA",
+    "dni": "13961423",
+    "code": "aMcdQfg1234JKcd8f"
+  },
+  {
+    "nombre": "SONIA",
+    "paterno": "CHINO",
+    "materno": "MAMANI",
+    "dni": "10064350",
+    "code": "hijklmzOg76Qcf1"
+  },
+  {
     "nombre": "-------",
-    "paterno": "C---",
+    "paterno": "----",
     "materno": "----",
-    "dni": "6760211",
-    "code": "321654987"
+    "dni": "------",
+    "code": "poiu0987asdfghjkl"
+  },
+  {
+    "nombre": "-------",
+    "paterno": "----",
+    "materno": "----",
+    "dni": "------",
+    "code": "qwerty1234uioplkj"
+  },
+  {
+    "nombre": "-------",
+    "paterno": "----",
+    "materno": "----",
+    "dni": "------",
+    "code": "zxcvbn5678nmqwerty"
+  },
+  {
+    "nombre": "-------",
+    "paterno": "----",
+    "materno": "----",
+    "dni": "------",
+    "code": "asdfgh0987poiuytr"
+  },
+  {
+    "nombre": "-------",
+    "paterno": "----",
+    "materno": "----",
+    "dni": "------",
+    "code": "jklmnbvcxz3214789"
+  },
+  {
+    "nombre": "-------",
+    "paterno": "----",
+    "materno": "----",
+    "dni": "------",
+    "code": "0987hjklbnmftqwer"
+  },
+  {
+    "nombre": "-------",
+    "paterno": "----",
+    "materno": "----",
+    "dni": "------",
+    "code": "3214xvbmkiuytpwrq"
+  },
+  {
+    "nombre": "-------",
+    "paterno": "----",
+    "materno": "----",
+    "dni": "------",
+    "code": "6543kjhgfdcvbnmlq"
   }
 ]
